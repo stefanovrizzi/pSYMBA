@@ -130,11 +130,11 @@ class ParameterSampling:
             return result
 
         # Example usage
-        #T1 = hyperparameters['taumin']  # lower bound
-        #T2 = hyperparameters['taumax'] # upper bound
-        #alpha = hyperparameters['tauPower']  # power-law exponent
+        T1 = hyperparameters['taumin']  # lower bound
+        T2 = hyperparameters['taumax'] # upper bound
+        alpha = hyperparameters['tauPower']  # power-law exponent
 
-        #tau = power_law_sample(T1, T2, alpha, size=self.I)  # Generate 1000 samples
+        tau = power_law_sample(T1, T2, alpha, size=self.I)  # Generate 1000 samples
         
         #Uniform
         tau = np.random.uniform(hyperparameters['taumin'], hyperparameters['taumax'], size=self.I)
